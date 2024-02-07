@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <section
-      class="w-full relative pt-[40px] pb-[60px] sm:pt-[80px] flex flex-col-reverse sm:flex-row items-center xl:px-[160px] 2xl:px-[226px]">
+      class="w-full relative pt-[40px] pb-[60px] sm:pt-[80px] flex flex-col-reverse sm:flex-row items-center xl:px-[120px] 2xl:px-[226px]">
       <div class="w-full flex justify-between items-center px-4">
         <div class="w-full p-5 flex flex-col justify-center gap-7 flex-1">
           <div class="shadow-lg w-fit">
@@ -33,7 +33,7 @@
       </div>
     </section>
     <section
-      class="w-full bg-[#00baf2] flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      class="w-full bg-[#00baf2] flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
       <h1 class="text-white text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[42px]">
         Recharge & Pay Bills on Paytm
       </h1>
@@ -55,7 +55,7 @@
       </div>
     </section>
     <section
-      class="w-full bg-[#0f4a8a] flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      class="w-full bg-[#0f4a8a] flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
       <h1 class="text-white text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[42px]">
         Book & Buy on Paytm.
       </h1>
@@ -77,7 +77,7 @@
       </div>
     </section>
     <section
-      class="w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      class="w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
       <h1
         class="text-black text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[52px] text-nowrap mb-8">
         Paytm Payment Instruments
@@ -148,7 +148,7 @@
       </div>
     </section>
     <section
-      class="w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      class="w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
       <div class="w-full flex justify-center items-center flex-col xl:flex-row gap-[50px]">
         <div class="flex justify-end flex-col flex-1 bg-white p-5 rounded-3xl sm:px-[40px] lg:px-[80px] pb-0">
           <div class="w-full">
@@ -204,7 +204,7 @@
     </section>
     <section class="w-full bg-white flex justify-center items-center">
       <div
-        class="w-full flex items-start px-[20px] py-[80px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+        class="w-full flex items-start px-[20px] py-[80px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
         <h1
           class="p-5 text-black text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[52px] text-nowrap mb-8">
           Financial Services by Paytm</h1>
@@ -239,15 +239,15 @@
         </div>
       </div>
     </section>
-    <section class="w-full p-2 sm:h-[500px] md:h-[650px] max-h-[700px] flex flex-colitems-center justify-center relative">
+    <section class="w-full p-2  flex flex-colitems-center justify-center relative">
       <div
         class="absolute bottom-0 left-0 w-full h-[300px] sm:h-[400px] md:h-[550px] bg-[url('https://pwebassets.paytm.com/commonwebassets/commonweb/images/home/gray-spike.png')] bg-cover bg-no-repeat">
       </div>
       <div
-        class="w-full flex items-center px-[50px] py-[50px] z-0 flex-col sm:flex-row gap-10 sm:justify-between xl:px-[160px] 2xl:px-[226px]">
+        class="w-full flex items-center px-[50px] py-[50px] z-0 flex-col sm:flex-row gap-10 sm:justify-between xl:px-[120px] 2xl:px-[226px]">
         <div class="flex justify-center items-center">
-          <img class="w-full sm:w-[400px] lg:max-w-[550px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/788781/1626077377376.png"
-            alt="">
+          <img class="w-full sm:w-[400px] md:w-[500px] xl:max-w-[650px] aspect-auto"
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/788781/1626077377376.png" alt="">
         </div>
         <div class="flex-1 max-w-[500px] w-full">
           <div class="">
@@ -275,6 +275,36 @@
           </nuxt-link>
         </div>
       </div>
+    </section>
+    <section class="w-full bg-white flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+      <div class="w-full flex justify-between">
+          <div class="max-w-[550px] p-5 flex-1">
+            <div class="pb-[12px]">
+              <img class="w-[200px]" src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg"
+                alt="logo">
+            </div>
+            <div class="w-full">
+              <h2 class="font-bold text-[28px] mt-[24px] md:text-[35px] xl:text-[52px]">Insurance made easy.
+              </h2>
+              <h5 class="text-[14px] text-black font-medium pt-[12px] mb-[24px] md:text-[20px]">
+                Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.
+              </h5>
+              <nuxt-link to="/"
+                class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
+                <span>Learn More</span>
+                <div class="relative ml-1 flex justify-center items-center">
+                  <span
+                    class="absolute w-0 h-[2px] duration-300 bg-white top-[50%] rounded-md left-[55%] translate-x-[-50%] translate-y-[-50%] group-hover:w-3"></span>
+                  <Icon name="fluent:ios-arrow-right-24-filled"
+                    class="transition-all duration-300 group-hover:translate-x-[2px]" />
+                </div>
+              </nuxt-link>
+            </div>
+          </div>
+          <div class="max-w-[550px] p-5 flex-1 hidden sm:flex">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png" alt="">
+          </div>
+        </div>
     </section>
   </div>
 </template>

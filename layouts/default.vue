@@ -148,13 +148,13 @@ const HomePage = () => {
       </div>
     </div>
     <header
-      class="fixed z-40 top-0 left-0 w-full flex justify-between items-center lg:px-[10px] px-[20px] py-[9px] bg-white shadow-lg xl:px-[160px] 2xl:px-[226px]">
+      class="fixed z-40 top-0 left-0 w-full flex justify-between items-center lg:px-[10px] px-[20px] py-[9px] bg-white shadow-lg xl:px-[120px] 2xl:px-[226px]">
       <div class="flex justify-center items-center gap-3">
         <i class="material-icons lg:hidden cursor-pointer" @click="OpenSideMenu">menu</i>
         <img class="w-32 transition-transform duration-300 lg:w-[180px] cursor-pointer" @click="navigateTo('/')"
           src="/assets/images/logo.svg" alt="">
       </div>
-      <ul class="hidden lg:flex justify-center items-center gap-4 text-[17px] font-bold xl:gap-8 text-nowrap">
+      <ul class="hidden lg:flex justify-center items-center gap-4 text-[15px] font-bold xl:gap-8 text-nowrap">
         <li>
           <nuxt-link to="/">Paytm for Consumer</nuxt-link>
         </li>
