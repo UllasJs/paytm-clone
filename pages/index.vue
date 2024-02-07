@@ -83,7 +83,7 @@
         Paytm Payment Instruments
       </h1>
       <div
-        class="sm:bg-white sm:p-[80px] rounded-3xl flex justify-between items-center w-full flex-col-reverse gap-6 sm:flex-row">
+        class="sm:bg-white sm:p-[80px] rounded-3xl flex justify-between items-center w-full flex-col-reverse gap-6 sm:flex-row overflow-hidden">
         <div class="flex-1">
           <div class="flex justify-start items-center gap-4">
             <img class="w-[60px] sm:w-[100px]"
@@ -102,7 +102,7 @@
             </p>
           </div>
           <nuxt-link
-            class="bg-black border transition-all duration-300 border-black px-[14px] py-[10px] mt-5 shadow-sm text-[14px] text-white rounded-[35px] flex justify-center items-center gap-1 w-fit hover:bg-white hover:text-black sm:text-[16px] md:text-[20px] sm:px-[24px] text-nowrap"
+            class="bg-black border transition-all duration-300 border-black px-[14px] py-[10px] mt-5 shadow-sm text-[14px] text-white rounded-[35px] flex justify-center items-center gap-1 w-fit hover:bg-white hover:text-black sm:text-[16px] lg:text-[20px] sm:px-[24px] text-nowrap"
             to="/">
             <span>Download the App</span>
             <Icon name="ic:baseline-apple" class="text-[20px]" />
@@ -134,7 +134,7 @@
             </p>
           </div>
           <nuxt-link
-            class="bg-black border transition-all duration-300 border-black px-[14px] py-[10px] mt-5 shadow-sm text-[14px] text-white rounded-[35px] flex justify-center items-center gap-1 w-fit hover:bg-white hover:text-black sm:text-[16px] md:text-[20px] sm:px-[24px] text-nowrap"
+            class="bg-black border transition-all duration-300 border-black px-[14px] py-[10px] mt-5 shadow-sm text-[14px] text-white rounded-[35px] flex justify-center items-center gap-1 w-fit hover:bg-white hover:text-black sm:text-[16px] lg:text-[20px] sm:px-[24px] text-nowrap"
             to="/">
             <span>Download the App</span>
             <Icon name="ic:baseline-apple" class="text-[20px]" />
@@ -148,7 +148,7 @@
       </div>
     </section>
     <section
-      class="h-screen w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      class="w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
       <div class="w-full flex justify-center items-center flex-col xl:flex-row gap-[50px]">
         <div class="flex justify-end flex-col flex-1 bg-white p-5 rounded-3xl sm:px-[40px] lg:px-[80px] pb-0">
           <div class="w-full">
@@ -160,8 +160,7 @@
               Unlimited Cashback <br>
               Every time
             </h1>
-            <p
-              class="text-[12px] font-semibold mt-[20px] mb-[8px] md:text-[20px]">
+            <p class="text-[12px] font-semibold mt-[20px] mb-[8px] md:text-[20px]">
               Paytm HDFC Bank Select Credit Card. <br> A card with assured Cashback and incredible offers.
             </p>
             <p class="text-[11px] text-[#75767f] md:text-[14px] lg:text-[20px]">
@@ -172,10 +171,10 @@
             </p>
             <div class="flex justify-center items-center">
               <img class="w-[300px] sm:w-[400px] md:w-[500px] mt-8"
-              src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png" alt="">
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png" alt="">
             </div>
           </div>
-        </div>  
+        </div>
         <div class="flex justify-end flex-col flex-1 bg-white p-5 rounded-3xl sm:px-[40px] lg:px-[80px] pb-0">
           <div class="w-full mt-[52px]">
             <img class="w-[140px] ml-[2px] md:w-[180px]"
@@ -186,8 +185,7 @@
               India’s Most <br>
               Sincere Credit Card
             </h1>
-            <p
-              class=" text-[12px] font-semibold mt-[20px] mb-[8px] md:text-[20px]">
+            <p class=" text-[12px] font-semibold mt-[20px] mb-[8px] md:text-[20px]">
               Paytm SBI Card SELECT - With Intelligent <br> Features & Great Rewards that Never Expire
             </p>
             <p class=" text-[11px] text-[#75767f] md:text-[14px] lg:text-[20px]">
@@ -198,11 +196,50 @@
             </p>
             <div class="flex justify-center items-center">
               <img class="w-[300px] sm:w-[400px] md:w-[500px] mt-8"
-              src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png" alt="">
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png" alt="">
             </div>
           </div>
-        </div>  
+        </div>
       </div>
+    </section>
+    <section class="w-full bg-white flex justify-center items-center">
+      <div
+        class="w-full flex items-start px-[20px] py-[80px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+        <h1 class="p-5 text-black text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[52px] text-nowrap mb-8">Financial Services by Paytm</h1>
+        <div class="w-full flex justify-between">
+          <div class="max-w-[550px] p-5 flex-1">
+            <div class="pb-[12px]">
+              <img class="w-[200px]" src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png"
+                alt="logo">
+            </div>
+            <div class="w-full">
+              <h2 class="font-bold text-[28px] mt-[24px] md:text-[35px] xl:text-[52px]">India's most sincere <br> bank.
+              </h2>
+              <h5 class="text-[14px] text-black font-medium pt-[12px] mb-[24px] md:text-[20px]">
+                Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant
+                account opening, virtual debit card and zero balance requirements, experience the future of banking today.
+              </h5>
+              <nuxt-link to="/"
+                class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
+                <span>Learn More</span>
+                <div class="relative ml-1 flex justify-center items-center">
+                  <span
+                    class="absolute w-0 h-[2px] duration-300 bg-white top-[50%] rounded-md left-[55%] translate-x-[-50%] translate-y-[-50%] group-hover:w-3"></span>
+                  <Icon name="fluent:ios-arrow-right-24-filled"
+                    class="transition-all duration-300 group-hover:translate-x-[2px]" />
+                </div>
+              </nuxt-link>
+            </div>
+          </div>
+          <div class="max-w-[550px] p-5 flex-1 hidden sm:flex">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full h-[300px] sm:h-[500px] md:h-[650px] max-h-[700px] flex justify-center relative">
+      <div
+        class="absolute bottom-0 left-0 w-full h-[300px] sm:h-[400px] md:h-[550px] bg-[url('https://pwebassets.paytm.com/commonwebassets/commonweb/images/home/gray-spike.png')] bg-cover bg-no-repeat"></div>
     </section>
   </div>
 </template>

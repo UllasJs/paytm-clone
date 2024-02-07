@@ -67,7 +67,8 @@ const HomePage = () => {
       :class="{ 'w-full': SideMenuBtn, 'w-0': !SideMenuBtn }">
       <div class="flex justify-start items-center h-16 gap-6 px-[20px] shadow-lg z-50 w-full">
         <i class="material-icons cursor-pointer" @click="OpenSideMenu">close</i>
-        <img class="w-32 transition-transform duration-300 lg:w-[180px] cursor-pointer" @click="HomePage" src="/assets/images/logo.svg" alt="">
+        <img class="w-32 transition-transform duration-300 lg:w-[180px] cursor-pointer" @click="HomePage"
+          src="/assets/images/logo.svg" alt="">
       </div>
       <div class="flex flex-col justify-start p-[18px] text-[20px] font-semibold text-nowrap h-screen bg-[#fafafa]">
         <div
@@ -150,7 +151,8 @@ const HomePage = () => {
       class="fixed z-40 top-0 left-0 w-full flex justify-between items-center lg:px-[10px] px-[20px] py-[9px] bg-white shadow-lg xl:px-[160px] 2xl:px-[226px]">
       <div class="flex justify-center items-center gap-3">
         <i class="material-icons lg:hidden cursor-pointer" @click="OpenSideMenu">menu</i>
-        <img class="w-32 transition-transform duration-300 lg:w-[180px] cursor-pointer" @click="navigateTo('/')" src="/assets/images/logo.svg" alt="">
+        <img class="w-32 transition-transform duration-300 lg:w-[180px] cursor-pointer" @click="navigateTo('/')"
+          src="/assets/images/logo.svg" alt="">
       </div>
       <ul class="hidden lg:flex justify-center items-center gap-4 text-[17px] font-bold xl:gap-8 text-nowrap">
         <li>
@@ -178,8 +180,11 @@ const HomePage = () => {
     </header>
     <div class="mt-[75px] h-[2000px] flex justify-start flex-col">
       <div class="z-30">
-        <marquee behavior="smooth" direction="left">
-          This website-clone is only for learing purposes
+        <marquee
+          class="capitalize bg-yellow-300 p-2 text-center text-white font-bold tracking-widest text-lg"
+          behavior="smooth" direction="left">
+          <icon name="mingcute:alert-fill" />
+          This website-clone is for learing purposes only
         </marquee>
       </div>
       <slot />
@@ -193,7 +198,8 @@ const HomePage = () => {
           <p class="font-medium text-xs text-black">Live the paytm Experience</p>
         </div>
       </div>
-      <nuxt-link class="px-[15px] py-[10px] text-xs text-white transition-all duration-200 bg-[#00baf2] rounded-3xl font-semibold tracking-wide hover:bg-white hover:text-[#00baf2] border hover:border-[#00baf2]"
+      <nuxt-link
+        class="px-[15px] py-[10px] text-xs text-white transition-all duration-200 bg-[#00baf2] rounded-3xl font-semibold tracking-wide hover:bg-white hover:text-[#00baf2] border hover:border-[#00baf2]"
         to="/">Download Now</nuxt-link>
     </div>
   </div>
@@ -208,5 +214,4 @@ const HomePage = () => {
 
 .BackGradient:after {
   display: none;
-}
-</style>
+}</style>
