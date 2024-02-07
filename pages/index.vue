@@ -206,7 +206,7 @@
       <div
         class="w-full flex items-start px-[20px] py-[80px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
         <h1
-          class="p-5 text-black text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[52px] text-nowrap mb-8">
+          class="p-5 text-black text-[20px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[52px] text-nowrap mb-8">
           Financial Services by Paytm</h1>
         <div class="w-full flex justify-between">
           <div class="max-w-[550px] p-5 flex-1">
@@ -239,7 +239,7 @@
         </div>
       </div>
     </section>
-    <section class="w-full p-2  flex flex-colitems-center justify-center relative">
+    <section class="w-full p-2  flex flex-colitems-center justify-center relative overflow-hidden">
       <div
         class="absolute bottom-0 left-0 w-full h-[300px] sm:h-[400px] md:h-[550px] bg-[url('https://pwebassets.paytm.com/commonwebassets/commonweb/images/home/gray-spike.png')] bg-cover bg-no-repeat">
       </div>
@@ -276,35 +276,123 @@
         </div>
       </div>
     </section>
-    <section class="w-full bg-white flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+    <section
+      class="w-full bg-white flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
       <div class="w-full flex justify-between">
-          <div class="max-w-[550px] p-5 flex-1">
-            <div class="pb-[12px]">
-              <img class="w-[200px]" src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg"
-                alt="logo">
-            </div>
-            <div class="w-full">
-              <h2 class="font-bold text-[28px] mt-[24px] md:text-[35px] xl:text-[52px]">Insurance made easy.
-              </h2>
-              <h5 class="text-[14px] text-black font-medium pt-[12px] mb-[24px] md:text-[20px]">
-                Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.
-              </h5>
-              <nuxt-link to="/"
-                class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
-                <span>Learn More</span>
-                <div class="relative ml-1 flex justify-center items-center">
-                  <span
-                    class="absolute w-0 h-[2px] duration-300 bg-white top-[50%] rounded-md left-[55%] translate-x-[-50%] translate-y-[-50%] group-hover:w-3"></span>
-                  <Icon name="fluent:ios-arrow-right-24-filled"
-                    class="transition-all duration-300 group-hover:translate-x-[2px]" />
-                </div>
-              </nuxt-link>
-            </div>
+        <div class="max-w-[550px] p-5 flex-1">
+          <div class="pb-[12px]">
+            <img class="w-[200px]" src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg"
+              alt="logo">
           </div>
-          <div class="max-w-[550px] p-5 flex-1 hidden sm:flex">
-            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png" alt="">
+          <div class="w-full">
+            <h2 class="font-bold text-[28px] mt-[24px] md:text-[35px] xl:text-[52px]">Insurance made easy.
+            </h2>
+            <h5 class="text-[14px] text-black font-medium pt-[12px] mb-[24px] md:text-[20px]">
+              Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry
+              of getting insured by making it simple, convenient & easy-to-understand.
+            </h5>
+            <nuxt-link to="/"
+              class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
+              <span>Learn More</span>
+              <div class="relative ml-1 flex justify-center items-center">
+                <span
+                  class="absolute w-0 h-[2px] duration-300 bg-white top-[50%] rounded-md left-[55%] translate-x-[-50%] translate-y-[-50%] group-hover:w-3"></span>
+                <Icon name="fluent:ios-arrow-right-24-filled"
+                  class="transition-all duration-300 group-hover:translate-x-[2px]" />
+              </div>
+            </nuxt-link>
           </div>
         </div>
+        <div class="max-w-[550px] p-5 flex-1 hidden sm:flex">
+          <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+      <div class="w-full flex justify-between flex-col md:flex-row">
+        <div class="ww-full] max-w-[550px] p-5 flex-1 flex justify-center items-center">
+          <img class="w-[350px] md:w-[500px]"
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/850765/1655987252365.png" alt="">
+        </div>
+        <div class="max-w-[550px] p-5 flex-1">
+          <div class="pb-[12px]">
+            <img class="w-[200px]" src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png"
+              alt="logo">
+          </div>
+          <div class="w-full">
+            <h2 class="font-bold text-nowrap text-[28px] mt-[24px] md:text-[35px] xl:text-[52px]">Get a Personal Loan in
+              <br>2 Minutes.
+            </h2>
+            <h5 class="text-[14px] text-black font-medium pt-[12px] mb-[24px] md:text-[18px]">
+              Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and
+              paperless.
+            </h5>
+            <nuxt-link to="/"
+              class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
+              <span>Learn More</span>
+              <div class="relative ml-1 flex justify-center items-center">
+                <span
+                  class="absolute w-0 h-[2px] duration-300 bg-white top-[50%] rounded-md left-[55%] translate-x-[-50%] translate-y-[-50%] group-hover:w-3"></span>
+                <Icon name="fluent:ios-arrow-right-24-filled"
+                  class="transition-all duration-300 group-hover:translate-x-[2px]" />
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full bg-white flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+      <h1 class="text-[24px] font-bold sm:text-[26px] md:text-[28px] lg:text-[42px]">Business Services by Paytm</h1>
+      <div class="w-full h-full bg-[#f5f7fa] rounded-[24px] mt-9 flex justify-between
+      items-center flex-col gap-10 md:flex-row py-[50px] pl-[10px] sm:pl-[50px]">
+        <div class="w-full flex-1">
+          <h1 class="text-[22px] font-semibold sm:text-[26px] md:text-[28px] lg:text-[58px]">Accept payments <br>
+            online with ease</h1>
+          <p class="py-[20px] sm:py-[40px] text-[14px] sm:text-[18px] lg:text-[20px]">
+            Grow your business with the payment gateway that <br> powers India’s largest brands and even the Paytm App
+          </p>
+          <nuxt-link to="/"
+            class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
+            <span>Learn More</span>
+            <div class="relative ml-1 flex justify-center items-center">
+              <span
+                class="absolute w-0 h-[2px] duration-300 bg-white top-[50%] rounded-md left-[55%] translate-x-[-50%] translate-y-[-50%] group-hover:w-3"></span>
+              <Icon name="fluent:ios-arrow-right-24-filled"
+                class="transition-all duration-300 group-hover:translate-x-[2px]" />
+            </div>
+          </nuxt-link>
+        </div>
+        <div class="w-full flex-1 flex items-center justify-end">
+          <img class=" w-[350px] lg:w-[550px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1697527245473.png"
+            alt="">
+        </div>
+      </div>
+      <div class="w-full h-full bg-[#f5f7fa] rounded-[24px] mt-9 flex justify-between
+      items-center flex-col gap-10 md:flex-row py-[50px] pl-[10px] sm:pl-[50px]">
+        <div class="w-full flex-1">
+          <h1 class="text-[22px] font-semibold sm:text-[26px] md:text-[28px] lg:text-[58px]">Accept payments <br>
+            online with ease</h1>
+          <p class="py-[20px] sm:py-[40px] text-[14px] sm:text-[18px] lg:text-[20px]">
+            Grow your business with the payment gateway that <br> powers India’s largest brands and even the Paytm App
+          </p>
+          <nuxt-link to="/"
+            class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
+            <span>Learn More</span>
+            <div class="relative ml-1 flex justify-center items-center">
+              <span
+                class="absolute w-0 h-[2px] duration-300 bg-white top-[50%] rounded-md left-[55%] translate-x-[-50%] translate-y-[-50%] group-hover:w-3"></span>
+              <Icon name="fluent:ios-arrow-right-24-filled"
+                class="transition-all duration-300 group-hover:translate-x-[2px]" />
+            </div>
+          </nuxt-link>
+        </div>
+        <div class="w-full flex-1 flex items-center justify-end">
+          <img class=" w-[350px] lg:w-[550px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1697527245473.png"
+            alt="">
+        </div>
+      </div>
     </section>
   </div>
 </template>
