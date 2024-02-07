@@ -1,0 +1,208 @@
+<template>
+  <div class="w-full">
+    <section
+      class="w-full relative pt-[40px] pb-[60px] sm:pt-[80px] flex flex-col-reverse sm:flex-row items-center xl:px-[160px] 2xl:px-[226px]">
+      <div class="w-full flex justify-between items-center px-4">
+        <div class="w-full p-5 flex flex-col justify-center gap-7 flex-1">
+          <div class="shadow-lg w-fit">
+            <img class="w-[50px] md:w-[80px]" src="/assets/images/home/paytm_app_logo.png" alt="" />
+          </div>
+          <div class="w-fit flex flex-col justify-start">
+            <h1 class="text-[32px] text-nowrap font-bold leading-9 mt-4 md:text-[42px] md:leading-tight lg:text-[62px]">
+              India's Most-loved <br />
+              Payments App
+            </h1>
+            <p class="text-nowrap text-[14px] font-medium pt-3 mb-5 md:text-[18px] lg:text-[22px]">
+              Recharge & pay bills, book flights & movie tickets, <br />
+              open a savings account, invest in stocks & mutual <br />
+              funds, and do a lot more
+            </p>
+            <nuxt-link
+              class="bg-black border transition-all duration-300 border-black px-[14px] py-[10px] mt-5 shadow-sm text-[14px] text-white rounded-[35px] flex justify-center items-center gap-1 w-fit hover:bg-white hover:text-black sm:text-[16px] md:text-[20px] sm:px-[24px]"
+              to="/">
+              <span>Download the Paytm App</span>
+              <Icon name="ic:baseline-apple" class="text-[20px]" />
+              <Icon name="ion:logo-google-playstore" />
+            </nuxt-link>
+          </div>
+        </div>
+        <div
+          class="absolute top-[40px] right-[-20px] translate-x-[-50%] translate-y-[-50px] w-[150px] sm:relative sm:w-96 sm:translate-x-0 sm:translate-y-0 sm:top-0 sm:right-0 p-5 flex-1 flex justify-center items-center">
+          <img class="" src="/assets/images/home/home_1.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full bg-[#00baf2] flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      <h1 class="text-white text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[42px]">
+        Recharge & Pay Bills on Paytm
+      </h1>
+      <div class="w-full grid grid-cols-2 gap-10 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7">
+        <ColItemsHomeitem name="Recharge" type="Prepaid" device="Mobile"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" />
+        <ColItemsHomeitem name="Pay" type="Electricity" device="Bill"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" />
+        <ColItemsHomeitem name="Recharge" type="DTH" device="Connection"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" />
+        <ColItemsHomeitem name="Book" type="Gas" device="Cylinder"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" />
+        <ColItemsHomeitem name="Pay" type="Broadband &" device="Landline Bill"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/1269194/1672827522093.png" />
+        <ColItemsHomeitem name="Pay" type="Education" device="Fee"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/1269198/1672828917034.png" />
+        <ColItemsHomeitem name="All" type="Payment" device="Services"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" />
+      </div>
+    </section>
+    <section
+      class="w-full bg-[#0f4a8a] flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      <h1 class="text-white text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[42px]">
+        Book & Buy on Paytm.
+      </h1>
+      <div class="w-full grid grid-cols-2 gap-10 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7">
+        <ColItemsSecontitem name="Movie" device="Tickets"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" />
+        <ColItemsSecontitem name="Flight" device="Tickets"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" />
+        <ColItemsSecontitem name="Bus" device="Tickets"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" />
+        <ColItemsSecontitem name="Train" device="Tickets"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1696910636390.png" />
+        <ColItemsSecontitem name="Buy" device="Insurance"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1666185237748.png" />
+        <ColItemsSecontitem name="International" device="Flights"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" />
+        <ColItemsSecontitem name="Invest" device="In Stocks"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" />
+      </div>
+    </section>
+    <section
+      class="w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      <h1
+        class="text-black text-[24px] font-bold sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[52px] text-nowrap mb-8">
+        Paytm Payment Instruments
+      </h1>
+      <div
+        class="sm:bg-white sm:p-[80px] rounded-3xl flex justify-between items-center w-full flex-col-reverse gap-6 sm:flex-row">
+        <div class="flex-1">
+          <div class="flex justify-start items-center gap-4">
+            <img class="w-[60px] sm:w-[100px]"
+              src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="paytm">
+            <p class="text-[14px] sm:text-[20px] font-bold">Paytm <br> Wallet</p>
+          </div>
+          <div class="mt-6">
+            <h1 class="text-nowrap text-[23px] sm:text-[25px] lg:text-[42px] font-bold">The Fastest Way to<br>
+              Pay In-store & Online.
+            </h1>
+          </div>
+          <div class="py-[25px] max-w-[400px]">
+            <p class="font-medium sm:text-[18px] lg:text-[20px]">
+              Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and
+              apps.
+            </p>
+          </div>
+          <nuxt-link
+            class="bg-black border transition-all duration-300 border-black px-[14px] py-[10px] mt-5 shadow-sm text-[14px] text-white rounded-[35px] flex justify-center items-center gap-1 w-fit hover:bg-white hover:text-black sm:text-[16px] md:text-[20px] sm:px-[24px] text-nowrap"
+            to="/">
+            <span>Download the App</span>
+            <Icon name="ic:baseline-apple" class="text-[20px]" />
+            <Icon name="ion:logo-google-playstore" />
+          </nuxt-link>
+        </div>
+        <div class="flex-1 flex justify-center items-center">
+          <img class="sm:m-w-[350px] sm:max-w-[350px]  lg:max-w-[500px]"
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png" alt="">
+        </div>
+      </div>
+      <div
+        class="sm:bg-white sm:p-[80px] rounded-3xl flex justify-between items-center w-full flex-col-reverse gap-6 sm:flex-row mt-24 sm:mt-8">
+        <div class="flex-1">
+          <div class="flex justify-start items-center gap-4">
+            <img class="w-[60px] sm:w-[100px]"
+              src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="paytm">
+            <p class="text-[14px] sm:text-[20px] font-bold">UPI Money <br> Transfer</p>
+          </div>
+          <div class="mt-6">
+            <h1 class="text-nowrap text-[23px] sm:text-[25px] lg:text-[42px] font-bold">Pay anyone directly<br>
+              from your bank <br> account.
+            </h1>
+          </div>
+          <div class="py-[25px] max-w-[400px]">
+            <p class="font-medium sm:text-[18px] lg:text-[20px]">
+              Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or
+              Directly from your Bank Account. Plus, send & receive money from anyone.
+            </p>
+          </div>
+          <nuxt-link
+            class="bg-black border transition-all duration-300 border-black px-[14px] py-[10px] mt-5 shadow-sm text-[14px] text-white rounded-[35px] flex justify-center items-center gap-1 w-fit hover:bg-white hover:text-black sm:text-[16px] md:text-[20px] sm:px-[24px] text-nowrap"
+            to="/">
+            <span>Download the App</span>
+            <Icon name="ic:baseline-apple" class="text-[20px]" />
+            <Icon name="ion:logo-google-playstore" />
+          </nuxt-link>
+        </div>
+        <div class="flex-1 flex justify-center items-center">
+          <img class="sm:m-w-[350px] sm:max-w-[350px]  lg:max-w-[500px]"
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section
+      class="h-screen w-full flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[160px] 2xl:px-[226px]">
+      <div class="w-full flex justify-center items-center flex-col xl:flex-row gap-[50px]">
+        <div class="flex justify-end flex-col flex-1 bg-white p-5 rounded-3xl sm:px-[40px] lg:px-[80px] pb-0">
+          <div class="w-full">
+            <img class="w-[140px] ml-[2px] md:w-[180px]"
+              src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png" alt="">
+          </div>
+          <div class="w-full">
+            <h1 class="text-[28px] font-bold pt-[28px] md:text-[35px] xl:text-[52px]">
+              Unlimited Cashback <br>
+              Every time
+            </h1>
+            <p
+              class="text-[12px] font-semibold mt-[20px] mb-[8px] md:text-[20px]">
+              Paytm HDFC Bank Select Credit Card. <br> A card with assured Cashback and incredible offers.
+            </p>
+            <p class="text-[11px] text-[#75767f] md:text-[14px] lg:text-[20px]">
+              *Paytm Payments Bank does not provide any loan or credit <br> card on the Paytm App.
+              <nuxt-link class="text-[#00baf2]" to="/">
+                Know more
+              </nuxt-link>
+            </p>
+            <div class="flex justify-center items-center">
+              <img class="w-[300px] sm:w-[400px] md:w-[500px] mt-8"
+              src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png" alt="">
+            </div>
+          </div>
+        </div>  
+        <div class="flex justify-end flex-col flex-1 bg-white p-5 rounded-3xl sm:px-[40px] lg:px-[80px] pb-0">
+          <div class="w-full mt-[52px]">
+            <img class="w-[140px] ml-[2px] md:w-[180px]"
+              src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png" alt="">
+          </div>
+          <div class="w-full">
+            <h1 class="text-[28px] font-bold pt-[28px] md:text-[35px] xl:text-[52px]">
+              India’s Most <br>
+              Sincere Credit Card
+            </h1>
+            <p
+              class=" text-[12px] font-semibold mt-[20px] mb-[8px] md:text-[20px]">
+              Paytm SBI Card SELECT - With Intelligent <br> Features & Great Rewards that Never Expire
+            </p>
+            <p class=" text-[11px] text-[#75767f] md:text-[14px] lg:text-[20px]">
+              *Paytm Payments Bank does not provide any loan or credit <br> card on the Paytm App.
+              <nuxt-link class="text-[#00baf2]" to="/">
+                Know more
+              </nuxt-link>
+            </p>
+            <div class="flex justify-center items-center">
+              <img class="w-[300px] sm:w-[400px] md:w-[500px] mt-8"
+              src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png" alt="">
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+  </div>
+</template>
