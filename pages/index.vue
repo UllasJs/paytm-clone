@@ -345,7 +345,7 @@
     <section
       class="w-full bg-white flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
       <h1 class="text-[24px] font-bold sm:text-[26px] md:text-[28px] lg:text-[42px]">Business Services by Paytm</h1>
-      <div class="w-full h-full bg-[#f5f7fa] rounded-[24px] mt-9 flex justify-between
+      <div class="w-full h-full bg-[#f5f7fa] rounded-2xl mt-9 flex justify-between
       items-center flex-col gap-10 md:flex-row py-[50px] pl-[10px] sm:pl-[50px]">
         <div class="w-full flex-1">
           <h1 class="text-[22px] font-semibold sm:text-[26px] md:text-[28px] lg:text-[58px]">Accept payments <br>
@@ -365,17 +365,18 @@
           </nuxt-link>
         </div>
         <div class="w-full flex-1 flex items-center justify-end">
-          <img class=" w-[350px] lg:w-[550px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1697527245473.png"
-            alt="">
+          <img class=" w-[350px] lg:w-[550px]"
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1697527245473.png" alt="">
         </div>
       </div>
-      <div class="w-full h-full bg-[#f5f7fa] rounded-[24px] mt-9 flex justify-between
+      <div class="w-full h-full bg-[#f5f7fa] rounded-2xl mt-9 flex justify-between
       items-center flex-col gap-10 md:flex-row py-[50px] pl-[10px] sm:pl-[50px]">
         <div class="w-full flex-1">
-          <h1 class="text-[22px] font-semibold sm:text-[26px] md:text-[28px] lg:text-[58px]">Accept payments <br>
+          <h1 class="text-[22px] font-semibold sm:text-[26px] md:text-[28px] lg:text-[58px]">In-shop payments <br>
             online with ease</h1>
           <p class="py-[20px] sm:py-[40px] text-[14px] sm:text-[18px] lg:text-[20px]">
-            Grow your business with the payment gateway that <br> powers India’s largest brands and even the Paytm App
+            Millions of small & big businesses use Paytm to accept <br> payments anywhere any time with a wide range of
+            <br> solutions for all kind of merchants
           </p>
           <nuxt-link to="/"
             class="group flex justify-center items-center transition-all duration-300 text-white bg-[#002970] w-fit px-[25px] py-[10px] rounded-[25px] hover:bg-[#00baf2] lg:text-[20px]">
@@ -389,9 +390,28 @@
           </nuxt-link>
         </div>
         <div class="w-full flex-1 flex items-center justify-end">
-          <img class=" w-[350px] lg:w-[550px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1697527245473.png"
-            alt="">
+          <img class=" w-[350px] lg:w-[550px]"
+            src="https://assetscdn1.paytm.com/images/catalog/view_item/853880/1656675942486.png" alt="">
         </div>
+      </div>
+    </section>
+    <section
+      class="w-full bg-white flex items-start px-[20px] py-[50px] flex-col gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+      <h1 class="text-[24px] font-bold sm:text-[26px] md:text-[28px] lg:text-[42px]">Business Tools to help <br> your
+        business growth</h1>
+      <div class="w-full grid grid-cols-1 gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <CardItemsCardItemhome headtext1="POS Billing" headtext2="Software"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/854033/1626081565192.png"
+          para="Say Hello to Smart Retail Business Management" />
+        <CardItemsCardItemhome headtext1="Paytm for" headtext2="Business App"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/854035/1626081071077.png"
+          para="Everything you need to manage your business on your phone" />
+        <CardItemsCardItemhome headtext1="Advertise on" headtext2="Paytm"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/854036/1656568216166.png"
+          para="Grow your business by advertising on India’s largest mobile business" />
+        <CardItemsCardItemhome headtext1="Business" headtext2="Khata"
+          image="https://assetscdn1.paytm.com/images/catalog/view_item/854038/1626081814411.png"
+          para="Managing Khata made easy" />
       </div>
     </section>
   </div>
