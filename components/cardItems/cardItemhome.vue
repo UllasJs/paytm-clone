@@ -17,13 +17,13 @@
         {{ para }}
       </p>
     </div>
-    <nuxt-link class="flex justify-start items-center gap-1 relative text-black text-[16px] group" to="/">
+    <nuxt-link class="flex justify-start items-center gap-1 relative text-black text-[16px] group hover:text-[#00baf2] transition-all duration-300" to="/">
       <div>
         Learn More
       </div>
       <div class="relative w-[20px] h-full overflow-hidden text-black">
         <Icon
-          class="text-[16px] transition-all duration-300 absolute top-[50%] left-[-50%] translate-x-[-50%] translate-y-[-50%] group-hover:left-[50%]"
+          class="text-[16px] transition-all duration-300 absolute top-[50%] left-[-50%] translate-x-[-50%] translate-y-[-50%] group-hover:left-[50%] group-hover:text-[#00baf2]"
           name="tabler:arrow-right" />
       </div>
     </nuxt-link>

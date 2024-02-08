@@ -414,5 +414,104 @@
           para="Managing Khata made easy" />
       </div>
     </section>
+    <section
+      class="w-full bg-white flex items-start px-[20px] py-[50px] gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-[200px] h-[240px] mr-[40px]">
+          <div class="mb-7">
+            <img class="w-[160px]" src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
+          </div>
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] mt-[15px]">
+              Get started on a wealth creation journey with Zero brokerage fee & no hidden charges.
+            </p>
+            <nuxt-link class="capitalize text-[15px] mt-2 text-[#00baf2]" to="/">Learn more</nuxt-link>
+          </div>
+        </div>
+        <ul class="flex items-center flex-wrap  gap-5">
+          <li class="list-none" v-for="(item, index) in items" :key="index">
+            <CardItemsPaytmmoney :image="item.image" :text="item.text" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section
+      class="w-full bg-white flex items-start px-[20px] py-[50px] gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-[200px] h-[240px] mr-[40px]">
+          <div class="mb-7">
+            <img class="w-[160px]" src="https://assetscdn1.paytm.com/images/catalog/view/307197/1626419838546.png" alt="">
+          </div>
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] mt-[15px]">
+              Best travel solutions with quick ticket bookings, great offers and easy refunds
+            </p>
+            <nuxt-link class="capitalize text-[15px] mt-2 text-[#00baf2]" to="/">Learn more</nuxt-link>
+          </div>
+        </div>
+        <ul class="flex items-center flex-wrap  gap-5">
+          <li class="list-none" v-for="(item, index) in nextItems" :key="index">
+            <CardItemsPaytmtravel :image="item.image" :text="item.text" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <Footer />
   </div>
 </template>
+
+
+<script setup>
+
+const items = [
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png',
+    text: 'Invest in Stocks'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png',
+    text: 'Apply for IPO'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png',
+    text: 'Invest in ETFs'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png',
+    text: 'Buy Gold'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png',
+    text: 'Invest in Mutual Funds'
+  },
+];
+
+const nextItems = [
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/863734/1627552693557.png',
+    text: 'Flat 14% Cashback With Code WELCOMEFLIGHT'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/864144/1627566096011.png',
+    text: '100% Refund With Paytms Canncellation Protect'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/864145/1627566172335.png',
+    text: 'Flat 10% Cashback With Code HAPPYBUS'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/864151/1627567062180.png',
+    text: 'Sanitised Bus Option With TravelSafe+'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/864152/1696910826276.png',
+    text: 'Hassle Free Train Ticket Bookings'
+  },
+  {
+    image: 'https://assetscdn1.paytm.com/images/catalog/view_item/864153/1627566396231.png',
+    text: 'PNR Status Check in Few Simple Clicks'
+  }
+
+]
+
+</script>
