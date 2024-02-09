@@ -46,7 +46,7 @@
       <Acord />
     </div>
     <div class="w-full">
-      <Slider :sliderWidth="500" :name="'Paytm Money'" />
+      <Slider :sliderWidth="300" :name="'Paytm Money'" :multiplyer="1"/>
     </div>
   </div>
 </template>

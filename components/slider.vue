@@ -2,7 +2,7 @@
   <div :style="{ width: `${sliderWidth + 100}px` }" class="border border-black rounded-lg p-3">
     <div class="flex flex-col items-center gap-4">
       <h1 class="text-[25px] font-bold">{{ name }}</h1>
-      <p class="text-2xl capitalize font-serif">percent : {{ parseInt(percentageX / 5) * 5 }}%</p>
+      <p class="text-2xl capitalize font-serif">percent : {{ parseInt(percentageX / multiplyer) * multiplyer }}%</p>
       <div @mousedown="clickButton" :style="{ width: `${sliderWidth}px` }"
         class="h-[5px] rounded-[35px] relative bg-green-300 my-5 silder_outter_div">
         <div ref="slider"
@@ -15,10 +15,7 @@
 
 <script setup>
 
-const { sliderWidth, name } = defineProps(['sliderWidth', 'name']);
-
-console.log(sliderWidth);
-console.log(name);
+const { sliderWidth, name, multiplyer } = defineProps(['sliderWidth', 'name', 'multiplyer']);
 
 const offsetX = ref(0)
 const offsetY = ref(0)
