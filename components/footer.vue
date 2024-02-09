@@ -43,11 +43,61 @@
       </div>
     </div>
     <div class="w-full">
-      <Acord />
+      <Acord title="Investor Relations" :initialOpen="openAcord === 1" @toggle="toggleAccord(1)">
+        <ul class="w-full flex flex-col justify-around">
+          <li>
+            <InneraccordAccordion title="Home" :initialOpen="innerAcord === 1" @toggle="toggleInnerAcord(1)">
+              <ul class="flex flex-col gap-5 px-2 py-3 transition-all duration-300 text-[#ccc] text-[14px] tracking-wider">
+                <li>
+                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[15px]" to="/">Overview</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[15px]" to="/">Our Business</nuxt-link>
+                </li>
+              </ul>
+            </InneraccordAccordion>
+          </li>
+          <li>
+            <InneraccordAccordion title="Home" :initialOpen="innerAcord === 2" @toggle="toggleInnerAcord(2)">
+              testing inner 1
+            </InneraccordAccordion>
+          </li>
+        </ul>
+      </Acord>
+      <Acord title="Investor Relations" :initialOpen="openAcord === 2" @toggle="toggleAccord(2)">
+        test
+      </Acord>
+      <Acord title="Investor Relations" :initialOpen="openAcord === 3" @toggle="toggleAccord(3)">
+        test
+      </Acord>
+      <Acord title="Investor Relations" :initialOpen="openAcord === 4" @toggle="toggleAccord(4)">
+        test
+      </Acord>
     </div>
-    <div class="w-full">
-      <Slider :sliderWidth="300" :name="'Paytm Money'" :multiplyer="1"/>
-    </div>
+    <Slider :sliderWidth="500" name="Range" multiplyer="1" />
   </div>
 </template>
+
+<script setup>
+const openAcord = ref(0)
+
+const innerAcord = ref(0)
+
+const toggleInnerAcord = (index) => {
+  if (innerAcord.value === index) {
+    innerAcord.value = 0;
+  } else {
+    innerAcord.value = index
+  }
+}
+
+const toggleAccord = (index) => {
+  if (openAcord.value === index) {
+    openAcord.value = 0;
+  } else {
+    openAcord.value = index
+  }
+}
+
+</script>
 
