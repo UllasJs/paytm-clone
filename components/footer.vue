@@ -74,7 +74,7 @@
         test
       </Acord>
     </div>
-    <Slider :sliderWidth="500" name="Range" multiplyer="1" />
+    <!-- <Slider :sliderWidth="500" name="Range" multiplyer="1" /> -->
   </div>
 </template>
 

@@ -5,7 +5,7 @@
       <!-- <p class="text-2xl capitalize font-serif">percent : {{ parseInt(percentageX / multiplyer) * multiplyer }}%</p> -->
       <div @mousedown="clickButton" :style="{ width: `${sliderWidth}px` }"
         class="h-[5px] rounded-[35px] relative bg-green-300 my-5 silder_outter_div">
-        <div ref="slider"
+        <div 
           class="w-[35px] h-[15px] rounded-full shadow-2xl top-[50%] translate-y-[-50%] absolute bg-red-400 slider_button cursor-pointer"
           :style="{ left: `${posX}px` }">
           <div class="absolute z-20 w-12 h-12 rounded-full flex justify-center items-center bg-blue-500 top-[-55px] left-[50%] translate-x-[-50%] shadow-2xl">
