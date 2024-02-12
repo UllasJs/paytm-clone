@@ -6,18 +6,17 @@
     </div>
     <div class="bg-white w-full h-full flex justify-center items-center">
       <div class="h-full flex justify-center items-center">
-        <div class="h-[2px] bg-red-600 relative silder_outter_div" :style="{ width: `${sliderWidth}px` }">
-          <div @mousedown="clickButtonLeft" @mouseup="stopBtn"
+        <div class="h-[3px] rounded-2xl bg-red-600 relative silder_outter_div" :style="{ width: `${sliderWidth}px` }">
+          <div @mousedown="clickButtonLeft"
             class="w-4 h-4 bg-green-500 rounded-full absolute top-[50%] translate-y-[-50%] cursor-pointer slider_button_left z-30 shadow-2xl"
             :style="{ left: `${minPosX}px` }"></div>
-          <div class="absolute translate-y-[-50%] z-10 h-[5px] bg-gray-400 min-w-[100px] text-center overflow-hidden"
-            :style="{
-              width: `${limitSlider}px`,
-              left: `${minPosX}px`,
-              right: `${maxPosX}`,
-            }"></div>
-          <div @mousedown="clickButtonRight" @mouseup="stopBtn"
-            class="w-4 h-4 bg-orange-500 rounded-full absolute top-[50%] translate-y-[-50%] cursor-pointer z-30 slider_button_right shadow-xl"
+          <div class="absolute translate-y-[-50%] top-[50%] z-10 h-[5px] bg-gray-400 text-center overflow-hidden" :style="{
+            width: `${limitSlider}px`,
+            left: `${minPosX + 12}px`,
+            right: `${maxPosX + 12}px`,
+          }"></div>
+          <div @mousedown="clickButtonRight"
+            class="w-4 h-4 bg-green-500 rounded-full absolute top-[50%] translate-y-[-50%] cursor-pointer z-30 slider_button_right shadow-xl"
             :style="{ left: `${maxPosX}px` }"></div>
         </div>
       </div>
@@ -26,12 +25,13 @@
 </template>
 
 <script setup>
-const { sliderWidth, name, left, right, limit } = defineProps([
+const { sliderWidth, name, left, right, limit, steps } = defineProps([
   "sliderWidth",
   "name",
   "left",
   "right",
   "limit",
+  "steps"
 ]);
 const limitSlider = ref(sliderWidth);
 
@@ -69,7 +69,10 @@ const dragButtonLeft = (e) => {
   const max =
     document.querySelector(".silder_outter_div").clientWidth -
     document.querySelector(".slider_button_left").clientWidth;
-  minPosX.value = Math.max(min, Math.min(max, newX));
+
+  // Calculate the position based on steps
+  const stepSize = max / steps;
+  minPosX.value = Math.round(Math.max(min, Math.min(max, newX)) / stepSize) * stepSize;
 };
 
 const dragButtonRight = (e) => {
@@ -81,11 +84,15 @@ const dragButtonRight = (e) => {
   const max =
     document.querySelector(".silder_outter_div").clientWidth -
     document.querySelector(".slider_button_right").clientWidth;
-  maxPosX.value = Math.max(min, Math.min(max, newX));
+
+  const stepSize = max / steps;
+  maxPosX.value = Math.round(Math.max(min, Math.min(max, newX)) / stepSize) * stepSize;
 };
+
 
 onUpdated(() => {
   limitSlider.value = maxPosX.value - minPosX.value;
+
   const max =
     document.querySelector(".silder_outter_div").clientWidth -
     document.querySelector(".slider_button_right").clientWidth;
@@ -93,13 +100,22 @@ onUpdated(() => {
   const minPercent = Math.round((minPosX.value / max) * 100)
   const maxPercent = Math.round((maxPosX.value / max) * 100)
 
-  percentX.value = minPercent
-  minVal.value = right * percentX.value / 100
+  const limitPercent = (limit / right) * 100
+  minLimit.value = max * limitPercent / 100
+
+  var calmin = right * minPercent / 100;
+
+  // Assign the calculated value to minVal
+  minVal.value = calmin;
 
   percentXmax.value = maxPercent
-  maxval.value = right * percentXmax.value / 100
+  var calculatedValue = right * percentXmax.value / 100;
 
-  
+  if (calculatedValue > right) {
+    maxval.value = right;
+  } else {
+    maxval.value = calculatedValue;
+  }
 });
 
 const saveBtnPosLeft = () => {
