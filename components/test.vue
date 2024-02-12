@@ -33,6 +33,7 @@ const { sliderWidth, name, left, right, limit, steps } = defineProps([
   "limit",
   "steps"
 ]);
+
 const limitSlider = ref(sliderWidth);
 
 const minLimit = ref(100);
@@ -71,7 +72,7 @@ const dragButtonLeft = (e) => {
     document.querySelector(".slider_button_left").clientWidth;
 
   // Calculate the position based on steps
-  const stepSize = max / steps;
+  const stepSize = max / (steps ? steps : 900000);
   minPosX.value = Math.round(Math.max(min, Math.min(max, newX)) / stepSize) * stepSize;
 };
 
