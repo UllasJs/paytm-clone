@@ -1,22 +1,23 @@
 <template>
-  <div class="bg-blue-300 flex flex-col border border-black" :style="{ width: `${sliderWidth + 100}px`, height: `${sliderHeight}px` }">
+  <div class="bg-blue-300 flex flex-col border border-black"
+    :style="{ width: `${sliderWidth + 100}px`, height: `${sliderHeight}px` }">
     <div class="flex w-full justify-center items-center gap-10">
       <p>Min: {{ minVal }}</p>
       <p>Max: {{ maxval }}</p>
     </div>
     <div class="bg-white w-full h-full flex justify-center items-center">
       <div class="h-full flex justify-center items-center">
-        <div class="h-[3px] rounded-2xl bg-red-600 relative silder_outter_div" :style="{ width: `${sliderWidth}px` }">
+        <div class="h-[3px] rounded-2xl bg-gray-300 relative silder_outter_div" :style="{ width: `${sliderWidth}px` }">
           <div @mousedown="clickButtonLeft"
-            class="w-4 h-4 bg-green-500 rounded-full absolute top-[50%] translate-y-[-50%] cursor-pointer slider_button_left z-30 shadow-2xl"
+            class="w-4 h-3 bg-red-500 rounded-full absolute top-[50%] translate-y-[-50%] cursor-pointer slider_button_left z-30 shadow-2xl"
             :style="{ left: `${minPosX}px` }"></div>
-          <div class="absolute translate-y-[-50%] top-[50%] z-10 h-[5px] bg-gray-400 text-center overflow-hidden" :style="{
+          <div class="absolute translate-y-[-50%] top-[50%] z-10 h-[3px] bg-green-400 text-center overflow-hidden" :style="{
             width: `${limitSlider}px`,
             left: `${minPosX + 12}px`,
             right: `${maxPosX + 12}px`,
           }"></div>
           <div @mousedown="clickButtonRight"
-            class="w-4 h-4 bg-green-500 rounded-full absolute top-[50%] translate-y-[-50%] cursor-pointer z-30 slider_button_right shadow-xl"
+            class="w-4 h-3 bg-red-500 rounded-full absolute top-[50%] translate-y-[-50%] cursor-pointer z-30 slider_button_right shadow-xl"
             :style="{ left: `${maxPosX}px` }"></div>
         </div>
       </div>
@@ -25,15 +26,16 @@
 </template>
 
 <script setup>
-const { sliderWidth, sliderHeight, name, left, right, limit, steps } = defineProps([
+const { sliderWidth, sliderHeight, name, left, right, steps } = defineProps([
   "sliderWidth",
   "sliderHeight",
   "name",
   "left",
   "right",
-  "limit",
   "steps"
 ]);
+
+const showRight = ref(false)
 
 const limitSlider = ref(sliderWidth);
 
@@ -44,7 +46,6 @@ const maxval = ref(right)
 
 const minPosX = ref(0);
 const offsetMin = ref(0);
-const percentX = ref(0);
 
 const maxPosX = ref(sliderWidth);
 const offsetMax = ref(0);
@@ -136,5 +137,3 @@ const saveBtnPosRight = () => {
   document.removeEventListener("mouseup", saveBtnPosRight);
 };
 </script>
-
-

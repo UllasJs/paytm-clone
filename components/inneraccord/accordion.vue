@@ -5,8 +5,10 @@
         @click="toggle">
         <span>{{ title }}</span>
       </div>
-      <div class="w-full overflow-hidden transition-all px-2 duration-200 border bg-white rounded-md border-[#ccc] p-3" v-show="initialOpen">
-      <div class="w-4 h-4 bg-black absolute z-10"></div>
+      <div class="w-full relative transition-all px-2 duration-200 border bg-white rounded-md border-[#ccc] p-3"
+        v-show="initialOpen">
+        <div class="w-4 h-4 left-6 bg-white absolute z-[-1] border-[#ccc] border rotate-45 top-[-5px]"></div>
+        <div class="w-4 h-4 left-6 bg-white absolute z-[0] rotate-45 top-[-4px]"></div>
         <slot></slot>
       </div>
     </div>
