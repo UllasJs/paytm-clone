@@ -61,7 +61,7 @@ const HomePage = () => {
 </script>
 
 <template>
-  <div class="w-full ">
+  <div class="w-full">
     <div
       class="fixed z-50 left-0 top-0 h-lvh overflow-hidden transition-all duration-300 bg-white flex flex-col lg:hidden"
       :class="{ 'w-full': SideMenuBtn, 'w-0': !SideMenuBtn }">
@@ -178,7 +178,7 @@ const HomePage = () => {
         <img :src="img" alt="">
       </div>
     </header>
-    <div class="mt-[75px] h-[2000px] flex justify-start flex-col">
+    <div class="mt-[75px] flex justify-start flex-col">
       <div class="z-30">
         <marquee
           class="capitalize bg-yellow-300 p-2 text-center text-white font-bold tracking-widest text-lg"

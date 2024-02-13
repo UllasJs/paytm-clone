@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-300 h-[100px] flex flex-col border border-black" :style="{ width: `${sliderWidth + 100}px` }">
+  <div class="bg-blue-300 flex flex-col border border-black" :style="{ width: `${sliderWidth + 100}px`, height: `${sliderHeight}px` }">
     <div class="flex w-full justify-center items-center gap-10">
       <p>Min: {{ minVal }}</p>
       <p>Max: {{ maxval }}</p>
@@ -25,8 +25,9 @@
 </template>
 
 <script setup>
-const { sliderWidth, name, left, right, limit, steps } = defineProps([
+const { sliderWidth, sliderHeight, name, left, right, limit, steps } = defineProps([
   "sliderWidth",
+  "sliderHeight",
   "name",
   "left",
   "right",
@@ -101,7 +102,8 @@ onUpdated(() => {
   const minPercent = Math.round((minPosX.value / max) * 100)
   const maxPercent = Math.round((maxPosX.value / max) * 100)
 
-  const limitPercent = (limit / right) * 100
+  const stepSize = (right - left) / steps;
+  const limitPercent = (stepSize / right) * 100;
   minLimit.value = max * limitPercent / 100
 
   var calmin = right * minPercent / 100;

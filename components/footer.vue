@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-screen flex flex-col items-start px-[20px] py-[50px] gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
+    class="w-full flex flex-col items-start px-[20px] py-[50px] gap-3 sm:gap-5 lg:gap-6 xl:px-[120px] 2xl:px-[226px]">
     <div class="w-full border-b border-[#ccc] justify-center lg:justify-between pb-5 flex">
       <div class="hidden lg:flex items-center gap-4">
         <div class="flex flex-col text-[20px] font-semibold">
@@ -47,19 +47,26 @@
         <ul class="w-full flex flex-col justify-around">
           <li>
             <InneraccordAccordion title="Home" :initialOpen="innerAcord === 1" @toggle="toggleInnerAcord(1)">
-              <ul class="flex flex-col gap-5 px-2 py-3 transition-all duration-300 text-[#ccc] text-[14px] tracking-wider">
+              <ul class="flex flex-col sm:flex-row gap-5 px-2 py-3 transition-all duration-300 text-[#ccc] text-[13.5px] tracking-wider">
                 <li>
-                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[15px]" to="/">Overview</nuxt-link>
+                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[14px]" to="/">Overview</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[15px]" to="/">Our Business</nuxt-link>
+                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[14px]" to="/">Our Business</nuxt-link>
                 </li>
               </ul>
             </InneraccordAccordion>
           </li>
           <li>
-            <InneraccordAccordion title="Home" :initialOpen="innerAcord === 2" @toggle="toggleInnerAcord(2)">
-              testing inner 1
+            <InneraccordAccordion title="Financials" :initialOpen="innerAcord === 2" @toggle="toggleInnerAcord(2)">
+              <ul class="flex flex-col sm:flex-row gap-5 px-2 py-3 transition-all duration-300 text-[#ccc] text-[13.5px] tracking-wider">
+                <li>
+                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[14px]" to="/">Financial Results</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link class="hover:text-[#1d2c38] transition-all duration-300 hover:text-[14px]" to="/">Our Business</nuxt-link>
+                </li>
+              </ul>
             </InneraccordAccordion>
           </li>
         </ul>
